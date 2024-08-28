@@ -1,0 +1,41 @@
+{
+	"name": "@mellkam/vue-reactive-search-params",
+	"decsription": "Reactive search params for Vue 3",
+	"keywords": [
+		"vue",
+		"params",
+		"reactive",
+		"search",
+		"url"
+	],
+	"files": [
+		"dist/",
+		"LICENSE",
+		"package.json",
+		"README.md"
+	],
+	"version": "0.1.0",
+	"author": {
+		"name": "Artem Melnyk",
+		"url": "https://github.com/MellKam"
+	},
+	"repository": "github:MellKam/vue-reactive-search-params",
+	"license": "MIT",
+	"type": "module",
+	"module": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"build": "tsup ./src/index.ts --format esm --minify --dts --out-dir dist"
+	},
+	"peerDependencies": {
+		"vue": ">= 3.2.0"
+	},
+	"devDependencies": {
+		"@types/bun": "1.1.8",
+		"vue": "3.4.38",
+		"tsup": "8.2.4",
+		"jsdom": "25.0.0",
+		"@types/jsdom": "21.1.7",
+		"typescript": "5.5.4"
+	}
+}
